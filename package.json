@@ -1,0 +1,36 @@
+{
+  "name": "@mongodb-model/man",
+  "version": "0.0.0",
+  "description": "man",
+  "main": "index.js",
+  "bin": {
+    "man": "bin/index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "vitest --globals"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mongodb-model/man.git"
+  },
+  "keywords": [
+    "man",
+    "stream",
+    "duplex",
+    "transform",
+    "eventEmitter"
+  ],
+  "author": "Ericson S. Weah <ericson.weah@gmail.com> (https://www.ericsonweah.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mongodb-model/man/issues"
+  },
+  "homepage": "https://github.com/mongodb-model/man#readme",
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "vitest": "0.25.1"
+  }
+}
