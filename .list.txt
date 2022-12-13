@@ -14,12 +14,6 @@
 14. model method -n model_name --info 
 15. model method -n model_name -i 
 16. model make:model model_name
-17. model make:model model_name --controller=controller_name
-18. model make:model model_name --controller=controller_name --tcp 
-19. model make:model model_name -c controller_name -t 
-20. model make:model model_name -c controller_name
-21. model make:model model_name -c controller_name --tcp 
-22. model make:model model_name -c controller_name -t 
 23. model make:schema schema_name
 24. model --schema=schema_name 
 25. model make:migration migration_name

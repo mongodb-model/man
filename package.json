@@ -10,7 +10,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "vitest --globals"
+    "test": "test"
   },
   "repository": {
     "type": "git",
@@ -28,9 +28,5 @@
   "bugs": {
     "url": "https://github.com/mongodb-model/man/issues"
   },
-  "homepage": "https://github.com/mongodb-model/man#readme",
-  "dependencies": {
-    "dotenv": "16.0.3",
-    "vitest": "0.25.1"
-  }
+  "homepage": "https://github.com/mongodb-model/man#readme"
 }
