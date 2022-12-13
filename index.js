@@ -454,7 +454,7 @@ class Man extends require("./base") {
         '\x1b[36m--help\x1b[0m or \x1b[36m-h\x1b[0m': '         Help: [\x1b[36m--help\x1b[0m|\x1b[36m-h\x1b[0m\x1b[0m\x1b[0m]',
         '\x1b[36m--list\x1b[0m or \x1b[36m-l\x1b[0m ': '        List methods:  [\x1b[36mmethod\x1b[0m\x1b[0m][\x1b[36m--list\x1b[0m|\x1b[36m-l\x1b[0m]',
         '\x1b[36m--name\x1b[0m or \x1b[36m-n\x1b[0m': '         Get method by name: \x1b[36mmethod \x1b[0m[\x1b[36m--name=\x1b[0m\x1b[0m|\x1b[36m--name \x1b[0m]\x1b[0mmethod_name',
-        '\x1b[36mmake:model\x1b[0m': '           Make model: [\x1b[36mmake:model\x1b[0m\x1b[0m\x1b[0m] model_name \x1b[0m[\x1b[36m--controller=\x1b[0m|\x1b[36m-c \x1b[0m] [\x1b[36m--tcp\x1b[0m|\x1b[36m-t\x1b[0m] \x1b[0m[\x1b[36m--route=\x1b[0m|\x1b[36m-r \x1b[0m]',
+        '\x1b[36mmake:model\x1b[0m': '           Make model: [\x1b[36mmake:model\x1b[0m\x1b[0m\x1b[0m] model_name \x1b[0m[ \x1b[36m--controller=\x1b[0m|\x1b[36m-c \x1b[0m] [\x1b[36m--tcp\x1b[0m|\x1b[36m-t\x1b[0m] \x1b[0m[\x1b[36m--route=\x1b[0m|\x1b[36m-r \x1b[0m]',
         '\x1b[36mmake:migration\x1b[0m': '       Make migration: [\x1b[36mmake:migration\x1b[0m\x1b[0m] migration_name',
         '\x1b[36mmake:schema\x1b[0m': '          Make schema: [\x1b[36mmake:schema\x1b[0m\x1b[0m\x1b[0m] schema_name',
         '\x1b[36m--model\x1b[0m or \x1b[36m-M\x1b[0m ': '       Make model: \x1b[0m[\x1b[36m--model=\x1b[0m|\x1b[36m--model\x1b[0m|\x1b[36m-M\x1b[0m] model_name',
@@ -465,7 +465,7 @@ class Man extends require("./base") {
        
     }
 
-    let clean = string.split(' ').filter(str => str !== '').join(' ')
+    // let clean = string.split(' ').filter(str => str !== '').join(' ')
  
 
     if (string  === 'man' || string === ' -h' || string === '--help' ||  string === 'help') {
@@ -476,7 +476,7 @@ class Man extends require("./base") {
 \x1b[36mSYPNOSIS\x1b[0m
 \x1b[36mmodel\x1b[0m [\x1b[36mman\x1b[0m|\x1b[36m--help\x1b[0m|\x1b[36m-h\x1b[0m|\x1b[36mhelp\x1b[0m]
 \x1b[36mmodel\x1b[0m [\x1b[36mmethod\x1b[0m\x1b[0m][\x1b[36m--list\x1b[0m|\x1b[36m-l\x1b[0m]\x1b[0m[\x1b[0m\x1b[36m--name=\x1b[0m|\x1b[36m--name\x1b[0m|\x1b[36m-n\x1b[0m] method_name\x1b[0m [\x1b[36m--info\x1b[0m|\x1b[36m-i\x1b[0m]
-\x1b[36mmodel\x1b[0m [\x1b[36mmake:model\x1b[0m|\x1b[36m--model=\x1b[0m|\x1b[36m--model\x1b[0m|\x1b[36m-M\x1b[0m\x1b[0m\x1b[0m\x1b[0m] model_name \x1b[0m[\x1b[36m--controller\x1b[0m|\x1b[36m-c\x1b[0m] [\x1b[36m--tcp\x1b[0m|\x1b[36m-t\x1b[0m] \x1b[0m[\x1b[36m--route\x1b[0m|\x1b[36m-r\x1b[0m] \x1b[0m[\x1b[36m--migration\x1b[0m|\x1b[36m-m\x1b[0m]
+\x1b[36mmodel\x1b[0m [\x1b[36mmake:model\x1b[0m|\x1b[36m--model=\x1b[0m|\x1b[36m--model\x1b[0m|\x1b[36m-M\x1b[0m\x1b[0m\x1b[0m\x1b[0m] model_name
 \x1b[36mmodel\x1b[0m [\x1b[36mmake:schema\x1b[0m|\x1b[36m--schema=\x1b[0m|\x1b[36m--schema\x1b[0m|\x1b[36m-s\x1b[0m\x1b[0m\x1b[0m] schema_name
 \x1b[36mmodel\x1b[0m [\x1b[36mmake:migration\x1b[0m|\x1b[36m--migration=\x1b[0m|\x1b[36m--migration\x1b[0m|\x1b[36m-m\x1b[0m\x1b[0m\x1b[0m] migration_name \x1b[0m
 \x1b[36mmodel\x1b[0m [\x1b[36mmigrate\x1b[0m|\x1b[36m--migrate=\x1b[0m|\x1b[36m-m\x1b[0m\x1b[0m\x1b[0m]\x1b[0m[\x1b[36m--schema=\x1b[0m|\x1b[36m-s\x1b[0m] schema_name
@@ -531,5 +531,8 @@ Model is very highly event driven. It is compatible with mongoose.js`
 }
 
 module.exports = Man;
+
+
+
 
 
